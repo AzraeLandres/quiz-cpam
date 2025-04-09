@@ -3,7 +3,7 @@ export type Question = {
   options: string[];
   answer: number[];
 };
-const questions: Question[] = [
+const quiz: Question[] = [
   {
     question: "Que signifie l’acronyme CPAM ?",
     options: [
@@ -45,4 +45,4 @@ const questions: Question[] = [
   },
 ];
 
-export default questions;
+export default quiz;

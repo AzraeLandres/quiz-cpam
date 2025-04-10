@@ -2,7 +2,7 @@ import { FaLinkedinIn, FaGithub, FaDownload } from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
-    <div className="flex w-[10%] gap-2 justify-evenly items-center">
+    <div className="flex  gap-2 justify-evenly items-center">
       <a
         href="https://www.linkedin.com/in/azraellandres/"
         target="_blank"

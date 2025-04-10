@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-darkblue: #26205e;
+  --color-lightblue: #eef2f8;
+  --color-success: #83ba09;
+  --color-yellow: #eeb221;
+  --color-error: #ba0909;
+}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: sans-serif;
+  }
+  body {
+    background-color: var(--color-lightblue);
+  }
+}

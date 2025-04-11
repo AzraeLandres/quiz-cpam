@@ -8,7 +8,7 @@ export default defineConfig({
       targets: [
         {
           src: "public/cv.pdf",
-          dest: "", // à la racine de dist
+          dest: "",
         },
       ],
     }),

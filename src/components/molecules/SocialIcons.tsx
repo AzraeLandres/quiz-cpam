@@ -20,7 +20,7 @@ const SocialIcons = () => {
         <FaGithub className="w-4 h-4" />
       </a>
       <a
-        href="/cv.pdf"
+        href="../../assets/cv.pdf"
         download
         className="bg-darkblue text-white p-2 rounded hover:bg-yellow transition"
       >

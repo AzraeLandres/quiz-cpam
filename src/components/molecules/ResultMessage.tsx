@@ -7,6 +7,11 @@ type Props = {
 };
 
 export default function ResultMessage({ score, total, onRestart }: Props) {
+  const sendEmail = () => {
+    const user: string = "azraellandres.pro";
+    const domain: string = "gmail.com";
+    window.location.href = `mailto:${user}@${domain}`;
+  };
   return (
     <div className="text-center flex flex-col gap-4">
       <h2 className="text-2xl font-semibold text-indigo-900">Résultat</h2>
@@ -17,7 +22,10 @@ export default function ResultMessage({ score, total, onRestart }: Props) {
       <Button variant="secondary" onClick={onRestart}>
         Recommencer
       </Button>
-      <Button variant="primary"> Contactez moi</Button>
+      <Button variant="primary" onClick={sendEmail}>
+        {" "}
+        Contactez moi
+      </Button>
     </div>
   );
 }

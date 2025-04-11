@@ -19,7 +19,7 @@ export default function Button({
 
   const variants = {
     primary: "bg-yellow hover:border-2 hover:border-yellow-600",
-    secondary: "bg-lightblue border border-darkblue text-darkblue",
+    secondary: "bg-darkblue border border-darkblue text-darkblue",
     success: "bg-success hover:bg-green-700",
     danger: "bg-error hover:bg-red-700",
   };

@@ -47,7 +47,7 @@ src/
 
 ## 🔗 Lien du projet
 
-[Voir le quiz en ligne](https://ton-lien.github.io/quiz-cpam)
+[Voir le quiz en ligne](https://azraelandres.github.io/quiz-cpam/)
 
 ## 👨🏿‍💻 Auteur
 

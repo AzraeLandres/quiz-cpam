@@ -5,7 +5,7 @@ export type Question = {
 };
 const quiz: Question[] = [
   {
-    question: "Que signifie l’acronyme CPAM ?",
+    question: "1. Que signifie l’acronyme CPAM ?",
     options: [
       "Caisse Publique d’Assurance Médicale",
       "Centre de Protection d’Assurance Maladie",
@@ -15,13 +15,13 @@ const quiz: Question[] = [
   },
   {
     question:
-      "Quel est le nom du site en ligne pour suivre ses remboursements santé ?",
+      "2. Quel est le nom du site en ligne pour suivre ses remboursements santé ?",
     options: ["MonEspaceSanté.fr", "Ameli.fr", "MaCarteSanté.fr"],
     answer: [1],
   },
   {
     question:
-      "Quel document faut-il présenter pour se faire rembourser ses soins ?",
+      "3. Quel document faut-il présenter pour se faire rembourser ses soins ?",
     options: [
       "Une carte Vitale",
       "Une ordonnance",
@@ -30,7 +30,7 @@ const quiz: Question[] = [
     answer: [0],
   },
   {
-    question: "Que permet la carte Vitale ?",
+    question: "4. Que permet la carte Vitale ?",
     options: [
       "Accéder aux urgences sans rendez-vous",
       "Transmettre automatiquement ses infos à la CPAM",
@@ -39,7 +39,7 @@ const quiz: Question[] = [
     answer: [1],
   },
   {
-    question: "Qui est l'alternant qu'il vous faut ?",
+    question: "5. Qui est l'alternant qu'il vous faut ?",
     options: ["Azraël Landres", "A. Landres", "Azraël L."],
     answer: [0, 1, 2],
   },

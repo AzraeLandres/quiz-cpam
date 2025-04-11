@@ -15,20 +15,28 @@ export default function AnswerOption({
   showFeedback,
   onClick,
 }: Props) {
-  const base = "border p-2 rounded cursor-pointer text-center transition";
-  const style = clsx(base, {
-    "bg-green-100 border-green-600 text-green-800":
-      showFeedback && isCorrect && isSelected,
+  const base =
+    "border p-2 rounded cursor-pointer text-center transition h-full flex items-center justify-center";
+
+  const feedbackStyle = clsx({
+    "bg-successlight border-green-600 text-green-800":
+      showFeedback && isCorrect,
     "bg-red-100 border-red-600 text-red-800":
       showFeedback && !isCorrect && isSelected,
-    "bg-white border-gray-300 text-gray-800": showFeedback && !isSelected,
-    "bg-indigo-100 border-indigo-600 text-indigo-800":
-      !showFeedback && isSelected,
-    "hover:bg-gray-100 bg-white border-gray-300": !showFeedback && !isSelected,
+    "bg-white border-gray-300 text-gray-800":
+      showFeedback && !isSelected && !isCorrect,
+  });
+
+  const normalStyle = clsx({
+    "bg-lightblue border-darkblue text-darkblue": !showFeedback && isSelected,
+    "bg-white border-gray-300 hover:bg-gray-100": !showFeedback && !isSelected,
   });
 
   return (
-    <li onClick={onClick} className={style}>
+    <li
+      onClick={onClick}
+      className={clsx(base, showFeedback ? feedbackStyle : normalStyle)}
+    >
       {text}
     </li>
   );

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Question } from "../../data/questions";
-import QuestionHeader from "../atoms/QuestionHeader";
+
 import Button from "../atoms/Button";
 import AnswerOption from "../atoms/AnswerOption";
+import QuestionText from "../atoms/QuestionText";
 
 type QuizStepProps = {
   question: Question;
@@ -29,9 +30,9 @@ const QuizStep = ({ question, onNext }: QuizStepProps) => {
   };
   return (
     <div>
-      <QuestionHeader text={question.question} />
+      <QuestionText text={question.question} />
 
-      <ul className="flex flex-col gap-2 w-full max-w-md">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mt-4 gap-4 w-full ">
         {question.options.map((option, index) => (
           <AnswerOption
             key={index}
@@ -43,16 +44,17 @@ const QuizStep = ({ question, onNext }: QuizStepProps) => {
           />
         ))}
       </ul>
-
-      {!validated ? (
-        <Button onClick={handleValidate} disabled={selectedOption === null}>
-          Valider
-        </Button>
-      ) : (
-        <Button onClick={handleNext} variant="success">
-          Suivant
-        </Button>
-      )}
+      <section className="flex justify-center mt-4">
+        {!validated ? (
+          <Button onClick={handleValidate} disabled={selectedOption === null}>
+            Valider
+          </Button>
+        ) : (
+          <Button onClick={handleNext} variant="success">
+            Suivant
+          </Button>
+        )}
+      </section>
     </div>
   );
 };

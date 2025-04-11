@@ -2,7 +2,7 @@ import { useState } from "react";
 import quiz from "../../data/questions";
 import QuizStep from "../../components/organisms/QuizStep";
 import ResultMessage from "../molecules/ResultMessage";
-import StartMessage from "../molecules/startMessage";
+import StartMessage from "../molecules/StartMessage";
 
 const QuizForm = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
